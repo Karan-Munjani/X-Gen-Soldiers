@@ -1,0 +1,13 @@
+$primary: rgb(204, 32, 32);
+$font-family-sans-serif: "Raleway";
+$body-bg: rgb(41, 38, 37);
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+$spacers: (
+  6: $spacer * 9,
+);
+$spacers: map-merge($spacers, $spacers);
+@import "node_modules/bootstrap/scss/bootstrap";

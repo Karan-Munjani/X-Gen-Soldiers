@@ -1,0 +1,80 @@
+@import "./base";
+
+body {
+  color: white;
+  box-sizing: border-box;
+}
+
+#hero {
+  background: url("/src/assets/Bg.png") no-repeat;
+  background-size: cover;
+  background-position: 0 30%;
+}
+
+.navbar {
+  width: 100%;
+  background: none !important;
+
+  #logo {
+    font-family: "Frijole", cursive;
+    font-size: 1.6em;
+  }
+  @media (max-width: 34em) {
+    background: $primary !important;
+    #logo {
+      color: white !important;
+    }
+  }
+
+  .navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @media (max-width: 34em) {
+      font-weight: normal;
+      color: white !important;
+    }
+  }
+  & > .navbar-brand {
+    font-weight: bolder;
+  }
+
+  .nav-item {
+    padding: 0rem 1rem;
+    @media (max-width: 34em) {
+      padding: 0;
+    }
+  }
+}
+
+.hero-content {
+  font-family: "Russo One" !important;
+}
+h1.hero-line {
+  font-size: 3em;
+  @media (max-width: 34em) {
+    font-size: 2em;
+  }
+}
+
+.highlight {
+  background: $primary;
+}
+
+.hero-img {
+  width: 80%;
+}
+
+#form-area {
+  h2 {
+    letter-spacing: 4px;
+  }
+  h4 {
+    color: gray;
+  }
+}
